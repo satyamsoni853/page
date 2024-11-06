@@ -78,23 +78,51 @@ h1 {
  
  
 }
-@media (max-width: 1200px) {
+
+@media (max-width: 1000px) {
   .learn {
-    flex-wrap: wrap; 
-    background-color: white; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f8442;
   }
   
   .learn-1, .learn2 {
-    width: 100%; 
-    
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
   }
-  .learn-1 p{
-    margin-left: 60px;
+  
+  .header-title {
+    margin-top: 20px;
+    justify-content: center;
+    flex-direction: column;
   }
-  .learn-1 h3{
-    margin-left: 60px;
+  
+  .header-icon {
+    width: 40px;
+    margin-bottom: 10px;
   }
-  .learn-1 button{
-    margin-left: 60px;
+
+  h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .learn-1 p, .learn2 p,
+  .learn-1 button, .learn2 button,
+  .learn-1 h3, .learn2 h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .learn-1 h3, .learn2 h3 {
+    font-size: 1.2rem;
+  }
+
+  .learn2 button, .learn-1 button {
+    width: calc(100% - 40px);
+    padding: 15px;
+    margin: 15px 20px;
   }
 }

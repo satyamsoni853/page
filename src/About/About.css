@@ -33,6 +33,32 @@
   position: absolute;
   right: 50px;
 }
+.mobile-nav ul li {
+  color: white; /* Default color for all items */
+}
+
+.mobile-nav ul li:hover {
+  color: #fbbf24; /* Tailwind's yellow-500 on hover */
+}
+
+.mobile-nav ul li:first-child {
+  color: #fbbf24; /* Permanent yellow color for the Home item */
+}
+
+.mobile-nav ul li a {
+  color: white; /* Default color for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.mobile-nav ul li a:hover {
+  color: #fbbf24; /* Yellow hover color for links */
+}
+
+.about-li{
+  
+  list-style: none;
+  text-decoration: none;
+}
 
 nav ul {
   position: absolute;
@@ -47,6 +73,10 @@ nav ul {
   margin: 0 100px;
   padding: 0;
 }
+.about-li {
+  text-decoration: none;
+  
+}
 nav ul li {
   margin-top: 50px;
   list-style: none;
@@ -54,9 +84,7 @@ nav ul li {
   
 }
 
-nav ul:hover {
-  color: white;
-}
+
 
 nav ul li:first-child {
   margin-right: auto;

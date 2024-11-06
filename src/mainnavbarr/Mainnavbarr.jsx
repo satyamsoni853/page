@@ -14,8 +14,8 @@ function Mainnavbarr() {
         <div className="mobile-nav">
           <div onClick={() => setShowMobileNav(false)}><IoClose /></div>
           <ul>
-            <li>Home</li>
-            <li><NavLink to="/coach">About Us</NavLink></li>
+            <li  >Home</li>
+            <li className='about-li' ><NavLink to="/coach">About Us</NavLink></li>
             <li>Service</li>
             <li>Gallery</li>
             <li>Contact Us</li>

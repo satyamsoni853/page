@@ -1,6 +1,6 @@
 .main {
     display: flex;
-    align-items: flex-start; 
+    align-items: flex-start;
     justify-content: space-between;
     gap: 50px;
     margin: 50px 100px;
@@ -12,9 +12,10 @@
     align-items: center;
     text-align: center;
     line-height: 1.8;
-    width: 100%; 
+    width: 100%;
 }
-.main{
+
+.main {
     height: 65vh;
 }
 
@@ -34,7 +35,7 @@
 .timming {
     display: flex;
     gap: 20px;
-    justify-content: center; /* Centers both timing sections within part-2 */
+    justify-content: center;
 }
 
 .timming-1, .timming-2 {
@@ -55,16 +56,51 @@
     font-size: 0.8rem;
 }
 
-.footer-1 p:first-child{
+.footer-1 p:first-child {
     color: black;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-
-@media (max-width:1000px) {
-    .main{
-        flex-wrap: wrap;
+@media (max-width: 1000px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 20px;
+        height: auto;
     }
     
+    .footer h1 {
+        font-size: 2rem;
+        padding: 0 20px;
+    }
+
+    .footer-1 img, .footer-2 img {
+        height: 80px;
+    }
+
+    .timming {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .timming-1 p:first-child, .timming-2 p:first-child {
+        font-size: 0.9rem;
+    }
+
+    .timming-1 p:nth-child(2), .timming-1 p:nth-child(3),
+    .timming-2 p:nth-child(2), .timming-2 p:nth-child(3) {
+        font-size: 0.75rem;
+    }
+
+    .footer-1 p:first-child {
+        font-size: 1rem;
+    }
+    .footer-1 img{
+        width: 200px;
+    }
+    .footer-2 img{
+        width: 200px;
+    }
 }
