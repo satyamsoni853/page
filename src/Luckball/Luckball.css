@@ -1,0 +1,16 @@
+.luckball{
+    text-align: center;
+    margin: 0px 100px;
+
+}
+.luckball p:first-child{
+    color: grey;
+    font-size: 1.2rem;
+}
+.luckball h3{
+    font-size: 2rem;
+}
+.luckball p:last-child{
+    color: grey;
+    font-size: 1.1rem;
+}

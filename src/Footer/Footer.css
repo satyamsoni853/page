@@ -1,0 +1,70 @@
+.main {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+    gap: 50px;
+    margin: 50px 100px;
+}
+
+.footer-1, .footer-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.8;
+    width: 100%; 
+}
+.main{
+    height: 65vh;
+}
+
+.footer-1 img, .footer-2 img {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.footer h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    padding: 0px 50px;
+    margin-bottom: 20px;
+}
+
+.timming {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Centers both timing sections within part-2 */
+}
+
+.timming-1, .timming-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timming-1 p:first-child, .timming-2 p:first-child {
+    color: grey;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.timming-1 p:nth-child(2), .timming-1 p:nth-child(3),
+.timming-2 p:nth-child(2), .timming-2 p:nth-child(3) {
+    color: rgb(54, 52, 52);
+    font-size: 0.8rem;
+}
+
+.footer-1 p:first-child{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+@media (max-width:1000px) {
+    .main{
+        flex-wrap: wrap;
+    }
+    
+}

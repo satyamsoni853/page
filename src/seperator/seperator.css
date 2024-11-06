@@ -1,0 +1,15 @@
+.seperator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:3px;
+ 
+}
+.seperator hr {
+  color: yellow;
+  height: 1px;
+  width: 100px;
+}
+.seperator span {
+  color: green;
+}
