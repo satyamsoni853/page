@@ -12,22 +12,19 @@ import Acedmy from "./Acedmy/Acedmy.jsx";
 import Coch from "./Cochsection/Coch/Coch.jsx";
 import Copyright from "./Copyright/Copyright.jsx";
 import Gallery from "./Gallery/Gallery.jsx";
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import Home from "./Home.jsx";
 
 function App() {
   return (
     <>
-    {/* <Gallery/> */}
-      {/* <Coch/> */}
-       <Navbarr />
-      <About />
-      {/* <Learn /> */}
-      {/* <Luckball /> */}
-      {/* <Card /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-      {/* <Ourmisssion /> */}
-      {/* <Acedmy />  */}
-      {/* { <Footer /> } */}
-       {/* <Copyright/>  */}
+          <Route path="/coach" element={<Coch />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
