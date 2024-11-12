@@ -154,4 +154,7 @@ nav ul li:first-child {
     border: 2px solid yellow;
     border-radius: 6px;
   }
+  .slider-button-1 ,.slider-button-2{
+    display: none;
+  }
 }
