@@ -7,10 +7,15 @@ import companyimg1 from './unicef.png'
 import companyimg2 from './sitrefesp.png'
 import companyimg3 from './fpf.png'
 import companyimg4 from './fcbarcelona.png'
-
+import Mainnavbarr from "../../mainnavbarr/Mainnavbarr";
+import Navbarr from "../../Navbarr/Navbarr";
+import Copyright from "../../Copyright/Copyright";
 function Coch() {
   return (
     <div>
+      <Navbarr/>
+      <Mainnavbarr/>
+      
       <div className="coch">
         <div className="about-coch">
           <p>About Coach</p>
@@ -67,6 +72,7 @@ function Coch() {
           <img src={companyimg4} alt="" />
         </div>
       </div>
+      <Copyright/>
     </div>
   );
 }

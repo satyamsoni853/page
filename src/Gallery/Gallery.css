@@ -1,9 +1,45 @@
-.galimg{
+.gallery{
     background-image: url(./slider-7.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
-    
+    /* position: absolute; */
     background-repeat: no-repeat;
+}
+.Our-Gallery {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.Our-Gallery h1 {
+    font-size: 4rem;
+    color: #000; 
+    margin-bottom: 20px;
+}
+
+.gal-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px; 
+}
+
+.gal-img img {
+    width: 23%; 
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 1000px) {
+    .gal-img img {
+        width: 48%; 
+    }
+}
+
+@media (max-width: 600px) {
+    .gal-img img {
+        width: 100%; 
+    }
 }

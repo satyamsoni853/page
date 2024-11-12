@@ -1,0 +1,54 @@
+.contact{
+    background-image: url(./slider-5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    /* position: absolute; */
+    background-repeat: no-repeat;
+}
+
+.contact-desc {
+    position: absolute;
+    color: white;
+    bottom: 50px; /* Adjust to position it near the bottom */
+    left: 50%; 
+    transform: translateX(-50%); /* Center the text horizontally */
+    text-align: center;
+}
+
+.contact-desc p:first-child {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.contact-desc p:last-child {
+    font-size: 1.8rem;
+    color: yellow;
+}
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between items */
+}
+
+.phone, .location, .email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex: 1; /* Ensure they take equal space */
+}
+
+.location p {
+    margin: 5px 0; /* Adds spacing between paragraphs */
+}
+
+@media (max-width: 1000px) {
+    .location {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 30px; /* Adds spacing between stacked items */
+    }
+}
