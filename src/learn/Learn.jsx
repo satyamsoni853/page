@@ -3,11 +3,14 @@ import "./Learn.css";
 import icon from "./icon-1.png";
 import service from "./service-bg-1.jpg";
 import { MdElectricBolt } from "react-icons/md";
+import {motion} from 'framer-motion'
 
 function Learn() {
   return (
     <div className="learn">
-      <div className="learn-1">
+      <motion.div
+      
+       className="learn-1">
         <h3 className="header-title">
           <img src={icon} alt="Football Icon" className="header-icon" />
           <h1>
@@ -28,8 +31,10 @@ function Learn() {
         </p>
         <br />
         <button>View Program</button>
-      </div>
-      <div className="learn2">
+      </motion.div>
+      <motion.div
+     
+       className="learn2">
         <h3>
           <MdElectricBolt />
           If you train hard, you’ll not only be hard, you’ll <br />
@@ -45,7 +50,7 @@ function Learn() {
         </p>{" "}
         <br />
         <button>How we train</button>
-      </div>
+      </motion.div>
     </div>
   );
 }
